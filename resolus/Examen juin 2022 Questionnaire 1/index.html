@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Exam frontend 2022</title>
+	<meta name="author" content=" votre nom ici ">
+	<style>
+		body {
+			font-family: calibri;
+			background-color: #354;
+			font-size: 1.5rem;
+			text-align: center;
+			margin: 0;
+			padding: 0;
+			color: #222;
+		}
+
+		header {
+			background-color: #576;
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: center;
+		}
+
+		.bouton,
+		.boutonOK {
+			font-size: 1rem;
+			width: 92px;
+			margin: 8px;
+			padding-top: 4px;
+			background-color: white;
+			cursor: pointer;
+			border-radius: 4px;
+			display: flex;
+			flex-flow: column nowrap;
+			justify-content: center;
+		}
+
+		.boutonOK {
+			font-size: 1.5rem;
+			width: 68px;
+		}
+
+		.bouton .nom {
+			padding: 4px;
+		}
+
+		.bouton .image {
+			margin: 4px;
+			text-align: center;
+		}
+
+		.bouton .image img {
+			width: 32px;
+		}
+
+		.bouton .prix {
+			padding: 4px;
+			background-color: #222;
+			color: #fff;
+			border-radius: 0 0 4px 4px;
+		}
+
+		.bouton:hover,
+		.bouton:focus,
+		.boutonOK:hover,
+		.boutonOK:focus {
+			background-color: orange;
+		}
+
+		.bouton:active,
+		.boutonOK:active {
+			background-color: yellow;
+		}
+
+		.articles {
+			width: 32px;
+			height: 32px;
+			padding: 8px;
+			margin: 8px;
+			background-color: #ccc;
+			display: inline-block;
+			vertical-align: top;
+		}
+
+		.articles.prix {
+			width: 64px;
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<div class="bouton" id="water">
+			<div class="nom">water</div>
+			<div class="image"><img src="png/water.png" alt=""></div>
+			<div class="prix"><span>0</span> €</div>
+		</div>
+		<div class="bouton" id="juice">
+			<div class="nom">juice</div>
+			<div class="image"><img src="png/juice.png" alt=""></div>
+			<div class="prix"><span>0</span> €</div>
+		</div>
+
+		<div class="bouton" id="coke">
+			<div class="nom">coke</div>
+			<div class="image"><img src="png/coke.png" alt=""></div>
+			<div class="prix"><span>0</span> €</div>
+		</div>
+
+		<div class="bouton" id="milkshake">
+			<div class="nom">milkshake</div>
+			<div class="image"><img src="png/milkshake.png" alt=""></div>
+			<div class="prix"><span>0</span> €</div>
+		</div>
+
+		<div class="bouton" id="beer">
+			<div class="nom">beer</div>
+			<div class="image"><img src="png/beer.png" alt=""></div>
+			<div class="prix"><span>0</span> €</div>
+		</div>
+
+		<div class="bouton" id="strong-beer">
+			<div class="nom">strong-beer</div>
+			<div class="image"><img src="png/strong-beer.png" alt=""></div>
+			<div class="prix"><span>0</span> €</div>
+		</div>
+
+		<div class="bouton" id="cocktail">
+			<div class="nom">cocktail</div>
+			<div class="image"><img src="png/cocktail.png" alt=""></div>
+			<div class="prix"><span>0</span> €</div>
+		</div>
+
+		<div class="bouton" id="wine">
+			<div class="nom">wine</div>
+			<div class="image"><img src="png/wine.png" alt=""></div>
+			<div class="prix"><span>0</span> €</div>
+		</div>
+
+		<div class="bouton" id="tea">
+			<div class="nom">tea</div>
+			<div class="image"><img src="png/tea.png" alt=""></div>
+			<div class="prix"><span>0</span> €</div>
+		</div>
+
+		<div class="bouton" id="coffee">
+			<div class="nom">coffee</div>
+			<div class="image"><img src="png/coffee.png" alt=""></div>
+			<div class="prix"><span>0</span> €</div>
+		</div>
+		<div class="boutonOK" id="ok">Ok</div>
+	</header>
+	<main id="main">
+
+	</main>
+	<footer id="prix">0 €</footer> 
+</body>
+</html>
