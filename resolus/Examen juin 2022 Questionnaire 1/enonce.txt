@@ -1,0 +1,20 @@
+Examen de Développement front-end, juin 2022
+
+Internet, GSM et clés USB sont interdits.
+Il est interdit d'ouvrir d'autres fichiers que ceux distribués pour cette épreuve.
+
+Au chargement, la page comporte un header contenant 10 boutons "boissons" et un bouton "ok" ; un main vide ; un footer. Chaque boisson a une étiquette de prix (0 par défaut).
+
+Les prix sont générés au chargement de la page comme suit :
+Pour chaque boisson,
+    générez une valeur aléatoire x entière entre 1 et 3.
+    si le prix de la boisson présente la classe "cher", ajoutez 3 à la valeur aléatoire x.
+    attribuez la valeur x obtenue au prix de la boisson.
+
+Lors d'un clic sur une boisson,
+    la boisson cliquée s'ajoute dans la commande, à la suite d'éventuelles autres boissons
+    le prix affiché dans le footer se met à jour.
+
+Au clic sur le bouton OK,
+    les boissons ne sont plus cliquables
+    le footer devient blanc
