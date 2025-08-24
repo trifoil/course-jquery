@@ -1,27 +1,71 @@
-Examen de Développement front-end, juin 2022
+Examen de Dï¿½veloppement front-end, juin 2022
 
-Internet, GSM et clés USB sont interdits.
-Il est interdit d'ouvrir d'autres fichiers que ceux distribués pour cette épreuve.
+Internet, GSM et clï¿½s USB sont interdits.
+Il est interdit d'ouvrir d'autres fichiers que ceux distribuï¿½s pour cette ï¿½preuve.
 
-La page représente des conteneurs à déchets.
-Les 4 conteneurs disposent chacun d'une étiquette reprenant un titre, la contennace et le contenu du conteneur.
+La page reprï¿½sente des conteneurs ï¿½ dï¿½chets.
+Les 4 conteneurs disposent chacun d'une ï¿½tiquette reprenant un titre, la contennace et le contenu du conteneur.
 
 Au chargement de la page,
-	les contenances sont piochées aléatoirement parmi le tableau ci-dessous, et injectées dans la page
+	les contenances sont piochï¿½es alï¿½atoirement parmi le tableau ci-dessous, et injectï¿½es dans la page
 	Pour chaque conteneur, 
-		un nombre de déchets x est généré aléatoirement entre 1 et 5.
-		x déchets sont alors générés et injectés dans le conteneur correspondant (utilisez la classe "dechet").
-		Chaque déchet reprend un intitulé aléatoire (parmi le tableau ci-dessous) et un volume aléatoire entre 1 et 7.
-	On évalue les contenus.
+		un nombre de dï¿½chets x est gï¿½nï¿½rï¿½ alï¿½atoirement entre 1 et 5.
+		x dï¿½chets sont alors gï¿½nï¿½rï¿½s et injectï¿½s dans le conteneur correspondant (utilisez la classe "dechet").
+		Chaque dï¿½chet reprend un intitulï¿½ alï¿½atoire (parmi le tableau ci-dessous) et un volume alï¿½atoire entre 1 et 7.
+	On ï¿½value les contenus.
 
-Évaluation des contenus :
-	Le contenu de chaque conteneur est calculé comme étant la somme de volumes des déchets et affiché.
-	Si un conteneur contient plus de déchet que sa contenance, la classe "trop" est ajoutée au contenu afin de l'afficher en rouge.
+ï¿½valuation des contenus :
+	Le contenu de chaque conteneur est calculï¿½ comme ï¿½tant la somme de volumes des dï¿½chets et affichï¿½.
+	Si un conteneur contient plus de dï¿½chet que sa contenance, la classe "trop" est ajoutï¿½e au contenu afin de l'afficher en rouge.
 	
-Au clic sur un déchet,
-	Ce déchet est supprimé.
-	On évalue les contenus.
+Au clic sur un dï¿½chet,
+	Ce dï¿½chet est supprimï¿½.
+	On ï¿½value les contenus.
 
-var contenances = new Array(8,10,12,15,20);	// en m³
-var dechets = new Array('planches', 'bricaillons', 'briques', 'carrelages', 'poutres', 'sable', 'contreplaqués', 
+var contenances = new Array(8,10,12,15,20);	// en mï¿½
+var dechets = new Array('planches', 'bricaillons', 'briques', 'carrelages', 'poutres', 'sable', 'contreplaquï¿½s', 
 
+**Examen de DÃ©veloppement Front-end - Juin 2022**
+
+**Consignes :**
+- Internet, GSM et clÃ©s USB sont interdits
+- Vous ne pouvez ouvrir que les fichiers fournis pour cet examen
+
+**Objectif :**
+CrÃ©er une application web reprÃ©sentant des conteneurs Ã  dÃ©chets avec gestion dynamique du contenu.
+
+**FonctionnalitÃ©s attendues :**
+
+1. **Au chargement de la page :**
+   - Quatre conteneurs sont affichÃ©s, chacun avec :
+     - Un titre
+     - Une contenance alÃ©atoire choisie parmi : [8, 10, 12, 15, 20] mÂ³
+     - Un nombre alÃ©atoire de dÃ©chets (entre 1 et 5)
+
+2. **GÃ©nÃ©ration des dÃ©chets :**
+   - Chaque dÃ©chet doit :
+     - Avoir un type alÃ©atoire parmi la liste fournie
+     - Avoir un volume alÃ©atoire entre 1 et 7 mÂ³
+     - ÃŠtre affichÃ© avec la classe CSS "dechet"
+
+3. **Calcul et affichage du contenu :**
+   - Pour chaque conteneur, calculer la somme des volumes de tous ses dÃ©chets
+   - Afficher ce total
+   - Si le contenu dÃ©passe la contenance du conteneur, ajouter la classe CSS "trop" pour afficher le texte en rouge
+
+4. **InteractivitÃ© :**
+   - Au clic sur un dÃ©chet, celui-ci doit Ãªtre supprimÃ©
+   - AprÃ¨s chaque suppression, recalculer et mettre Ã  jour l'affichage du contenu
+
+**DonnÃ©es fournies :**
+```javascript
+var contenances = new Array(8, 10, 12, 15, 20); // en mÂ³
+var dechets = new Array('planches', 'bricaillons', 'briques', 'carrelages', 'poutres', 'sable', 'contreplaquÃ©s');
+```
+
+**RÃ©sumÃ© des actions Ã  implÃ©menter :**
+- GÃ©nÃ©ration alÃ©atoire initiale
+- Calcul automatique des volumes
+- Gestion visuelle du dÃ©passement de capacitÃ©
+- Suppression interactive des dÃ©chets
+- Mise Ã  jour en temps rÃ©el aprÃ¨s chaque modification
