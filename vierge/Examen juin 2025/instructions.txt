@@ -1,0 +1,31 @@
+Examen de Développement front-end, juin 2025 : "Votre avis"
+
+Internet, GSM et clés USB sont interdits.
+Il est interdit d'ouvrir d'autres fichiers que ceux distribués pour cette épreuve.
+Le syllabus papier et les notes manuscrites sont permis durant l'épreuve.
+L'épreuve dure 1h30.
+
+La page comporte un formulaire permettant de donner son avis. Les avis sont affichés sous le formulaire.
+
+Chacune des 5 étoiles est cliquable,
+Au clic sur une des 5 étoiles,
+L'étoile et ses étoiles précédentes reçoivent la classe "ok"
+Les étoiles suivantes perdent la classe "ok".
+
+PS : vous pouvez faire 5 écoutes d'évènement différentes
+
+Lorsqu'on écrit dans le champ #pseudo,
+si le contenu du champ est vide (""), le bouton #save devient disabled
+sinon,
+le bouton #save n'est plus disabled
+si des commentaires portent le pseudo choisi,
+la classe "red" est appliquée au pseudo et aux pseudos correspondants
+
+PS : à un moment opportun il faudra enlever ces classes "red"
+
+Au clic sur le bouton #save,
+On récupère le commentaire, le pseudo et le nombre d'étoiles portant la classe "ok"
+Au-dessus des autres commentaires, on génère un nouveau commentaire (selon la structure HTML du commentaire de François-Baptiste)
+On nettoie : le bouton #save devient disabled, la classe "red" est enlevée des éléments la portant, #pseudo et #commentaire sont vidés
+
+Au clic sur un commentaire, il est supprimé
