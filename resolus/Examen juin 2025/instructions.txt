@@ -12,7 +12,7 @@ Au clic sur une des 5 étoiles,
 L'étoile et ses étoiles précédentes reçoivent la classe "ok"
 Les étoiles suivantes perdent la classe "ok".
 
-PS : vous pouvez faire 5 écoutes d'évènement différentes
+PS : vous pouvez faire 5 écoutes d'évènement différentes <- mental illness
 
 Lorsqu'on écrit dans le champ #pseudo,
 si le contenu du champ est vide (""), le bouton #save devient disabled
